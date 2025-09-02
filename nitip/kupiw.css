@@ -1,0 +1,129 @@
+   body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 10px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;     
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar .logo img {
+      height: 40px;
+      margin-right: 50px;
+    }
+
+    .navbar nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .navbar nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 8px 12px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .navbar nav a:hover {
+      color: #007bff;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      min-width: 150px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .buttoyn {
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttoyn button {
+      text-decoration: none;
+      background-color: #0d6efd;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .buttoynn button {
+      text-decoration: none;
+      background-color: #dc0042;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .buttoyn button:hover {
+      background-color: #3f0092;
+    }
+
+    .buttoynn button:hover {
+      background-color: #690000;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar nav, .navbar .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      .navbar nav {
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .navbar .buttons {
+        margin-top: 10px;
+      }
+    }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK Yadika Soreang</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-left img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar-left span {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: #007bff;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 5px;
+    }
+
+    .buttons button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      background-color: #1e2a78;
+      color: white;
+      cursor: pointer;
+    }
+
+    .buttonz button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ffd500;
+      color: white;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+      background-color: #162060;
+    }
+
+    .buttonz button:hover {
+      background-color: #576005;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="logo yadika.png" alt="smk yadika soreang">
+      <span>SMK Yadika Soreang</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#"><b>Home</b></a>
+      <div class="dropdown">
+        <a href="#">Jurusan `</a>
+        <div class="dropdown-content">
+          <a href="#">PPLG</a>
+          <a href="#">AKUTANSI</a>
+          <a href="#">PERHOTELAN</a>
+        </div>
+      </div>
+        <div class="dropdown">
+        <a href="#">Pojok Siswa `</a>
+        <div class="dropdown-content">
+          <a href="#">PENGHARGAAN</a>
+          <a href="#">EKSTRAKULIKULER</a>
+        </div>
+        </div>
+      <a href="#">Profile</a>
+      <a href="#">Pendaftar</a>
+    </nav>
+    <div class="buttons">
+      <button>PPDB</button>
+    </div>
+    <div class="buttonz">
+      <a href="pwb.webp"><button>Login</button></a>
+    </div>
+  </header>
+
+</body>
+</html>
